@@ -1,0 +1,17 @@
+.legal-view {
+  background-color: $legal-view-bg-color;
+
+  .scroll-content {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    ul {
+
+      padding-left: 20px;
+
+      li {
+        list-style-type: disc;
+      }
+    }
+  }
+}

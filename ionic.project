@@ -1,0 +1,18 @@
+{
+  "name": "webwed",
+  "app_id": "7aba5315",
+  "proxies": [
+    {
+      "path": "/test/api_example.php",
+      "proxyUrl": "http://www.riveloper.com/test/api_example.php"
+    }
+  ],
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

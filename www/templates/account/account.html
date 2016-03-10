@@ -1,0 +1,289 @@
+<ion-view view-title="Account Details" class="account-view">
+
+    <ion-nav-bar class="bar-stable bar-navigation">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content has-bouncing="false" class="has-header" style="top: 0px;">
+        <div class="row logo-content">
+            <div class="col">
+                <div class="app-logo">
+                    <img src="img/my-account-logo.svg">
+                </div>
+                <div class="logo-title">
+                    <h1>John Doe</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row members-content">
+            <div class="col">
+                <div class="row row-template">
+                    <div class="col">
+                        <div class="prefix-image">
+                            <img src="img/heart-blue-fill.svg">
+                        </div>
+                        <div class="middle-box">
+                            <div class="middle-text h-line calm">
+                                Yours: Jane Smith
+                            </div>
+                        </div>
+                        <div class="suffix-button">
+                            <button class="button button-outline button-small button-round button-positive">EMAIL</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-template">
+                    <div class="col">
+                        <div class="prefix-image">
+                            <img src="img/heart-calm-fill.svg">
+                        </div>
+                        <div class="middle-box">
+                            <div class="middle-text h-line calm">
+                                Officient: Rev.Peter Simons
+                            </div>
+                        </div>
+                        <div class="suffix-button">
+                            <button class="button button-outline button-small button-round button-positive">EMAIL</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-template">
+                    <div class="col">
+                        <div class="prefix-image">
+                            <img src="img/heart-calm-fill.svg">
+                        </div>
+                        <div class="middle-box">
+                            <div class="middle-text h-line calm">
+                                Witness 1: Katie Smith
+                            </div>
+                        </div>
+                        <div class="suffix-button">
+                            <button class="button button-outline button-small button-round button-positive">EMAIL</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-template">
+                    <div class="col">
+                        <div class="prefix-image">
+                            <img src="img/heart-calm-fill.svg">
+                        </div>
+                        <div class="middle-box">
+                            <div class="middle-text h-line calm">
+                                Witness 2: Drew Smith
+                            </div>
+                        </div>
+                        <div class="suffix-button">
+                            <button class="button button-outline button-small button-round button-positive">EMAIL</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row setting-content">
+            <div class="col">
+                <div class="row row-template">
+                    <div class="col">
+                        <div class="prefix-image">
+                            <img src="img/calendar-white.svg">
+                        </div>
+                        <div class="middle-box" >
+                            <div class="middle-text h-line calendar stable">
+                                June 26 2016
+                                <img src="img/clock-white.svg" class="clock">
+                                <div class="time">2:00PM EST</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-template">
+                    <div class="col">
+                        <div class="prefix-image">
+                            <img src="img/link-white.svg">
+                        </div>
+                        <div class="middle-box">
+                            <div class="middle-text h-line stable">
+                                Public Broadcast
+                            </div>
+                        </div>
+                        <div class="suffix-button">
+                            <label class="toggle toggle-positive">
+                                <input type="checkbox">
+                                <div class="track">
+                                    <div class="handle"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-template">
+                    <div class="col">
+                        <div class="prefix-image">
+                            <img src="img/chat-white.svg">
+                        </div>
+                        <div class="middle-box">
+                            <div class="middle-text h-line stable">
+                                Allow Chat
+                            </div>
+                        </div>
+                        <div class="suffix-button">
+                            <label class="toggle toggle-positive">
+                                <input type="checkbox">
+                                <div class="track">
+                                    <div class="handle"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-template">
+                    <div class="col">
+                        <div class="prefix-image">
+                            <img src="img/gift-white.svg">
+                        </div>
+                        <div class="middle-box">
+                            <div class="middle-text h-line stable">
+                                Accept Gifts
+                            </div>
+                        </div>
+                        <div class="suffix-button">
+                            <label class="toggle toggle-positive">
+                                <input type="checkbox">
+                                <div class="track">
+                                    <div class="handle"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-template">
+                    <div class="col" style="height: 30px;"></div>
+                </div>
+
+                <div class="row row-template">
+                    <div class="col">
+                        <div class="prefix-image">
+                            <img src="img/email-white.svg">
+                        </div>
+                        <div class="middle-box has-input">
+                            <div class="middle-text h-line stable">
+                                <label class="item item-input">
+                                    <input type="email" placeholder="Email:" ng-model="setting.email" required>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-template">
+                    <div class="col">
+                        <div class="middle-box has-input">
+                            <div class="middle-text h-line stable">
+                                <label class="item item-input">
+                                    <input type="password" placeholder="New Password:" ng-model="setting.password" required>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="suffix-button">
+                            <button class="button button-outline button-small button-round button-light">RESET</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-template">
+                    <div class="col">
+                        <div class="middle-box has-input">
+                            <div class="middle-text h-line stable">
+                                <label class="item item-input">
+                                    <input type="password" placeholder="Confirm Password:" ng-model="setting.confirm" required>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row ceremony-content">
+            <div class="col">
+                <div class="row row-template">
+                    <div class="col">
+                        <div class="middle-box">
+                            <div class="middle-text h-line calm">
+                                Ceremony Link:
+                                <p class="link">webwedmobile.com/s.php?i=jjdkjm22</p>
+                            </div>
+                        </div>
+                        <div class="suffix-button">
+                            <button class="button button-outline button-small button-round button-positive">SHARE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-template" style="height: 40px;"></div>
+
+                <div class="row row-template" style="height: 160px;">
+                    <div class="col">
+                        <div class="prefix-image" ng-click="setting.agree = !setting.agree;" style="z-index: 1;">
+                            <i class="icon" ng-class="{'ion-ios-circle-filled': setting.agree==true, 'ion-ios-circle-outline': setting.agree==false}"></i>
+                        </div>
+                        <div class="middle-box">
+                            <div class="agree-text">
+                                <p>
+                                    I have read and understand the user agreement and I am authorized to maket changes to this account. I understand that once a ceremony has been made public there is no way to assure it could be transfered to private without issues.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-template">
+                    <div class="col">
+                        <button class="button button-full button-positive">Update</button>
+                    </div>
+                </div>
+
+                <div class="row row-template" style="height: 30px;">
+                    <div class="col"></div>
+                </div>
+
+                <div class="row row-template">
+                    <div class="col">
+                        <button class="button button-full button-assertive">Invite</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row copyright-content" >
+            <div class="col">
+                <div class="padding">
+                    <p>
+                        &copy; 2016 All right reserved.
+                    </p>
+                    <p>
+                        Patent pending system. Third party resources used. See WEBWEDMOBILE.COM for full information regarding this app.
+                    </p>
+                    <div class="terms-of-service">
+                        <a href="#/app/terms-of-service/back" class="text-link">Terms of Service</a> and <a href="#/app/privacy-policy/back" class="text-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+
+</ion-view>

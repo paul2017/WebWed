@@ -1,0 +1,73 @@
+<ion-view view-title="" class="home-guest-view">
+
+    <ion-nav-bar class="bar-stable bar-navigation">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content scroll="false" class="has-header" style="top: 0px;">
+        <div class="logo-content">
+            <div class="app-logo">
+                <img src="img/web-wed-logo-white.svg">
+            </div>
+            <div class="logo-title">
+                You are cordially e-vited
+            </div>
+        </div>
+
+        <div class="middle-content">
+            <div class="heart-line">
+                <img src="img/heart-divide-line.svg">
+            </div>
+            <div class="name-title">
+                <h1>William & Jane</h1>
+                <h4>02.14.2016 at 1:30 PM EST</h4>
+                <div class="h-line positive"></div>
+                <div class="watch-live">
+                    - watch live -
+                </div>
+            </div>
+            <div class="button-area">
+                <button class="button button-full button-positive">Add to calendar</button>
+                <button class="button button-small button-clear button-light" ng-click="doBubble()">How It Works</button>
+            </div>
+        </div>
+
+        <div class="bubble" ng-if="showBubble == true">
+            <img ng-src="{{bubble}}" ng-style="{'margin-left': marginLeft}" ng-click="nextBubble()">
+        </div>
+
+        <div class="row bottom-content" style="">
+            <div class="col col-19">
+                <button class="button button-clear" ng-click="goChat()">
+                    <img src="img/tab-chat-white.svg">
+                </button>
+            </div>
+            <div class="col col-19 divider">
+                <button class="button button-clear" ng-click="goGift()">
+                    <img src="img/tab-gift-white.svg">
+                </button>
+            </div>
+            <div class="col col-24 divider">
+                <button class="button button-clear">
+                    <img src="img/tab-heart-white.svg">
+                </button>
+            </div>
+            <div class="col col-19 divider">
+                <button class="button button-clear">
+                    <img src="img/tab-event-white.svg">
+                </button>
+            </div>
+            <div class="col col-19 divider">
+                <button class="button button-clear">
+                    <img src="img/tab-link-white.svg">
+                </button>
+            </div>
+        </div>
+
+    </ion-content>
+
+
+</ion-view>

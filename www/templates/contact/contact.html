@@ -1,0 +1,80 @@
+<ion-view view-title="Contact Us" class="contact-view">
+
+    <ion-nav-bar class="bar-stable bar-navigation">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content scroll="false">
+        <div class="top-content">
+            <div class="contact-title">
+                We'd <img src="img/heart-calm-fill.svg"> to hear from you.
+            </div>
+            <div class="legal-notice">
+                <p ng-click="goLegal()">
+                    Reference out legal resources provided & verify where to obtain a legal marriage license by clicking here...
+                </p>
+            </div>
+
+        </div>
+        <div class="middle-content">
+            <div class="content-padding">
+                <form name="authorizationForm" novalidate="">
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-icon">
+
+                                <label class="item item-input">
+                                    <input type="text" placeholder="Name:" ng-model="account.name" required="">
+                                </label>
+                            </div>
+
+                            <div class="input-icon">
+
+                                <label class="item item-input">
+                                    <input type="email" placeholder="Email:" ng-model="account.email" required="">
+                                </label>
+                            </div>
+
+                            <div class="input-icon">
+
+                                <label class="item item-input">
+                                    <textarea placeholder="Message:" ng-model="account.message" required=""></textarea>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="button button-full button-calm" ng-click="doSubmit()">Submit</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="bottom-content">
+            <div class="row">
+                <div class="col telephone">
+                    <!--
+                    <a href="tel: 110">(800)-WEB-WEDO</a>
+                    -->
+                </div>
+                <div class="col address">
+                    <!--
+                    123 MainStreet Smyrna, GA
+                    -->
+                </div>
+            </div>
+            <div class="app-logo">
+                <img src="img/web-wed-logo-white.svg">
+            </div>
+            <div class="terms-of-service">
+                <a href="#/app/terms-of-service/back" class="text-link">Terms of Service</a> and <a href="#/app/privacy-policy/back" class="text-link">Privacy Policy</a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

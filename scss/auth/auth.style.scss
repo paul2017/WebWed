@@ -1,0 +1,123 @@
+.login-view {
+
+  background-color: $login-bg-color-middle;
+
+  .button {
+    font-size: 18px;
+  }
+
+  .top-content {
+    height: 31%;
+
+    .login-logo {
+      text-align: center;
+      padding-top: 75px;
+
+      img {
+        height: 100px;
+      }
+    }
+  }
+
+  .middle-content {
+    height: 50.8%;
+
+    .content-padding {
+      width: 76%;
+      margin-left: auto;
+      margin-right: auto;
+
+      .col {
+        padding: 0;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 28px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: $light;
+      }
+
+      .input-icon {
+        text-align: left;
+        margin-bottom: 10px;
+
+        img {
+          position: absolute;
+          margin-top: 13px;
+          height: 20px;
+        }
+      }
+
+      .item-input {
+        background-color: transparent;
+
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+        padding-left: 34px;
+
+        input {
+          color: $light;
+        }
+
+        &.no-border-bottom {
+          border-bottom: none;
+        }
+      }
+
+      .wedding-code {
+        text-align: center;
+        margin: -1px;
+        margin-top: -11px;
+        margin-bottom: 10px;
+
+        border: 1px solid #ddd;
+
+        input {
+          font-size: 20px;
+          color: $light;
+          text-align: center;
+        }
+      }
+    }
+
+    .button-clear {
+      font-size: 16px;
+    }
+  }
+
+  .bottom-content {
+    height: 18.2%;
+
+    .app-logo {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+      img {
+        height: 36px;
+      }
+    }
+
+    .tos-notice {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+      h4 {
+        color: $light;
+        font-size: 13px;
+        font-weight: 300;
+        margin-top: 0px;
+
+        a {
+          color: $light;
+        }
+      }
+    }
+  }
+}

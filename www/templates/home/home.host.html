@@ -1,0 +1,43 @@
+<ion-view view-title="JOHN DOE" class="home-host-view">
+
+    <ion-nav-bar class="bar-stable bar-navigation">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content scroll="false" class="has-header">
+
+        <div class="container">
+
+            <div class="people-block people-1">
+                <iframe src="https://www.youtube.com/embed/_MeQdL-efSc?amp;controls=0&amp;showinfo=0&autoplay=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="people-bottom">
+                <div class="people-block people-2">
+                    <iframe src="https://www.youtube.com/embed/CE8flO_UdhI?amp;controls=0&amp;showinfo=0;autoplay=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="people-block people-3">
+                    <iframe src="https://www.youtube.com/embed/ciBH0ZIMj3E?amp;controls=0&amp;showinfo=0;autoplay=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="people-block people-4">
+                    <iframe src="https://www.youtube.com/embed/YrJTm4nBQ0k?amp;controls=0&amp;showinfo=0;autoplay=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="button button-heart icon-heart" ng-click="clickHeartButton()">
+                <i  id="forever_heart" class="material-icons blue" ng-class="{'active': icon_blue=='active'}"></i>
+                <i  id="together_heart" class="material-icons yellow" ng-class="{'active': icon_blue=='active'}"></i>
+                <i  id="whereever_heart" class="material-icons fav" ng-class="{'active  icon-animation': icon_fav=='active', 'unlike': icon_fav==''}"></i>
+            </div>
+
+            <span class="heartbeat">Loading...</span>
+
+        </div>
+
+
+    </ion-content>
+
+</ion-view>

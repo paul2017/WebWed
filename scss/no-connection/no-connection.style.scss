@@ -1,0 +1,49 @@
+.no-connection-view {
+
+  background-color: $stable;
+
+  .top-content {
+    height: 46%;
+
+    .no-connection-logo {
+
+      padding-top: 50px;
+      text-align: center;
+
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  .bottom-content {
+    height: 54%;
+
+    .no-connection-title {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+
+      h1 {
+        text-align:center;
+        font-size: 26px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: $positive;
+      }
+    }
+
+    .no-connection-description {
+      width: 70%;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+
+      p {
+        text-align:center;
+        line-height: 16px;
+      }
+    }
+  }
+}
+

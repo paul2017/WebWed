@@ -1,0 +1,126 @@
+.contact-view {
+
+  background-color: $contact-view-bg-color;
+
+  .bar.bar-header {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .bar-stable {
+    .button {
+      color: $calm;
+    }
+
+    .title {
+      color: $calm;
+    }
+  }
+
+  .top-content {
+    height: 25%;
+
+    .contact-title {
+      width: 65%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+
+      font-size: 28px;
+      text-align: center;
+      color: $positive;
+
+      img {
+        width: 22px;
+      }
+    }
+
+    .legal-notice {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+
+      text-align: center;
+      color: #888888;
+    }
+  }
+
+  .middle-content {
+    height: 50%;
+
+    .content-padding {
+      width: 76%;
+      margin-left: auto;
+      margin-right: auto;
+
+      .col {
+        padding: 0;
+        text-align: center;
+      }
+
+      .item-input {
+        background-color: transparent;
+
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #888888;
+
+        padding-left: 0px;
+        padding-right: 0px;
+
+        input {
+          color: #888888;
+        }
+      }
+
+      textarea {
+        height: 80px;
+        color: #888888;
+      }
+
+    }
+  }
+
+  .bottom-content {
+    height: 25%;
+    background-color: $positive;
+
+    .telephone a {
+      color: $stable;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .address {
+      color: $stable;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .app-logo {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+      img {
+        height: 36px;
+      }
+    }
+
+    .terms-of-service {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      text-align:center;
+    }
+
+    color: $stable;
+
+    .text-link {
+      color: $stable;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+  }
+}

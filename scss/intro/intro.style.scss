@@ -1,0 +1,184 @@
+.intro-view {
+
+  // slider pager
+  .pager-page-0 {
+    .slider-pager-page {
+      color: white !important;
+    }
+
+    .slider-pager-page.active {
+      color: white !important;
+    }
+  }
+
+  .pager-page-1 {
+    .slider-pager-page {
+      color: white !important;
+    }
+
+    .slider-pager-page.active {
+      color: white !important;
+    }
+  }
+
+  .pager-page-2 {
+    .slider-pager-page {
+      color: $positive !important;
+    }
+
+    .slider-pager-page.active {
+      color: $positive !important;
+    }
+  }
+
+  .slider-pager-page {
+    opacity: 0.5;
+  }
+
+  .slider-pager-page:not(.active) i.icon:before {
+    content: "\f401";
+  }
+
+  // slider full screen
+  .slider {
+    height: 100%;
+  }
+
+  // page contents
+  .top-content {
+    height: 38.6%;
+
+    .app-logo {
+      margin-left: auto;
+      margin-right: auto;
+      height: 50%;
+      text-align: center;
+
+      img {
+        margin-top: 50px;
+        height: 40px;
+      }
+    }
+
+    .intro-title {
+      height: 50%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+
+      h1 {
+        font-size: 27px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .middle-content {
+    height: 22.8%;
+
+    .intro-image {
+      text-align: center;
+
+      img {
+        height: 120px;
+      }
+    }
+  }
+
+  .bottom-content {
+    height: 38.6%;
+
+    .intro-notice {
+      padding-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+      h2 {
+        font-size: 24px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      h3 {
+        font-size: 17px;
+      }
+    }
+  }
+
+  // each page
+  .intro-page-1 {
+    background-color: $intro-page-1-bg-color;
+
+    .intro-title {
+      width: 100%;
+      h1 {
+        color: $light;
+      }
+    }
+
+    .intro-notice {
+      width: 100%;
+      h2 {
+        color: $light;
+      }
+    }
+  }
+
+  .intro-page-2 {
+    background-color: $intro-page-2-bg-color;
+
+    .intro-title {
+      width: 70%;
+      h1 {
+        color: $light;
+      }
+    }
+
+    .intro-notice {
+      width: 70%;
+      h2 {
+        color: $light;
+      }
+    }
+  }
+
+  .intro-page-3 {
+    background-color: $intro-page-3-bg-color;
+
+    .intro-title {
+      width: 78%;
+      h1 {
+        color: $positive;
+      }
+    }
+
+    .intro-image {
+     img {
+        padding-top: 30px;
+      }
+    }
+
+    .intro-notice {
+      width: 77%;
+      h2 {
+        color: $positive;
+      }
+
+      h3 {
+        color: $positive;
+      }
+    }
+
+    .get-started {
+      padding-top: 0px;
+      text-align:center;
+
+      .button {
+        color: $calm;
+      }
+
+    }
+  }
+}

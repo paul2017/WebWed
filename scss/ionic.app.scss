@@ -1,0 +1,70 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+$stable:                          #ededed !default;
+$positive:                        #023a7b !default;
+$calm:                            #8cbac3 !default;
+$assertive:                       #e41b23 !default;
+$dark:                            #222222 !default;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include font
+$custom-font-path: "../font" !default;
+
+@font-face {
+  font-family: "Nickainley Normal";
+  src: url("#{$custom-font-path}/nickainley-normal-webfont.eot");
+  src: url("#{$custom-font-path}/nickainley-normal-webfont.eot?#iefix") format("embedded-opentype"),
+  url("#{$custom-font-path}/nickainley-normal-webfont.woff") format("woff"),
+  url("#{$custom-font-path}/nickainley-normal-webfont.ttf") format("truetype"),
+  url("#{$custom-font-path}/nickainley-normal-webfont.svg#nickainleynormal") format("svg");
+}
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+// Include project Sass variables
+@import "scss/common/common.variable";
+@import "scss/sidemenu/sidemenu.variable";
+@import "scss/intro/intro.variable";
+@import "scss/auth/auth.variable";
+@import "scss/legal/legal.variable";
+@import "scss/no-connection/no-connection.variable";
+
+@import "scss/about/about.variable";
+@import "scss/account/account.variable";
+@import "scss/contact/contact.variable";
+
+@import "scss/home/home.guest.variable";
+@import "scss/home/home.host.variable";
+
+// Include custom styles
+@import "scss/common/common.style";
+@import "scss/sidemenu/sidemenu.style";
+@import "scss/intro/intro.style";
+@import "scss/auth/auth.style";
+@import "scss/legal/legal.style";
+@import "scss/no-connection/no-connection.style";
+
+@import "scss/about/about.style";
+@import "scss/account/account.style";
+@import "scss/contact/contact.style";
+
+@import "scss/home/home.guest.style";
+@import "scss/home/home.host.style";

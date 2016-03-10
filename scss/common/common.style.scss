@@ -1,0 +1,55 @@
+// header bar
+.bar.bar-header {
+  border: 0px !important;
+  border-bottom-color: transparent !important;
+  background-image: none !important;
+  border-bottom: none !important;
+}
+
+.bar-navigation.bar.bar-header {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+// popup dialog
+.customPopup {
+  h1 {
+    color: $positive;
+  }
+
+  .button {
+    &:first-child {
+      position: absolute;
+      right: 20px;
+      border: 1px solid $dark;
+      border-radius: 1px;
+    }
+  }
+
+  .popup-head {
+    display: none;
+  }
+
+  .popup-body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .popup-buttons {
+    display: none;
+  }
+}
+
+// font style
+.text-bold {
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+}
+
+// horizontal line
+div.h-line {
+  border: none;
+  border-bottom: 1px solid;
+}

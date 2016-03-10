@@ -1,0 +1,141 @@
+.menu-content {
+  background-color: $dark;
+  box-shadow: none;
+
+  .item {
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #666;
+    color: white;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .item-complex .item-content {
+    background-color: transparent;
+  }
+
+  .item-content.activated {
+    background-color: $calm;
+    color: $positive;
+  }
+
+  .a {
+    color: white;
+  }
+
+  &.has-header {
+    top: $header-bar-height;
+  }
+  &.has-footer {
+    bottom: $footer-bar-height;
+  }
+}
+
+.menu {
+
+  .bar-header {
+    height: $header-bar-height;
+
+    .sidemenu-header {
+      width: 100%;
+      padding-top: 20px;
+      padding-left: 16px;
+      padding-right: 16px;
+
+      text-align: left;
+
+      img {
+        height: 17px;
+      }
+
+      h1 {
+        font-weight: 300;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 34px;
+        color: $light;
+      }
+
+      .row, .col {
+        padding: 0px;
+      }
+
+      h6 {
+        font-weight: normal;
+        color: $calm;
+
+        &.host {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+
+        &.guest {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.bar-footer {
+  background-color: $dark;
+  height: $footer-bar-height;
+
+  border: 0px !important;
+  border-top: transparent;
+  border-color: transparent;
+  background-image: none !important;
+
+  .sidemenu-copyright {
+    padding-left: 12px;
+    padding-right: 12px;
+
+    h6 {
+      font-size: 13px;
+      font-weight: 300;
+      color: $stable;
+    }
+
+    h5 {
+      font-size: 13px;
+      font-weight: 500;
+      color: $stable;
+
+      a {
+        color: $stable;
+      }
+
+      margin-top: 20px;
+    }
+  }
+
+  .app-logo {
+    width: 100%;
+    text-align: center;
+
+    img {
+      height: 40px;
+    }
+  }
+}
+
+/* iOS Specific Overrides */
+.platform-ios.platform-cordova:not(.fullscreen) {
+
+  .menu .bar-header:not(.bar-subheader) {
+    height: $header-bar-height+20px !important;
+  }
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) {
+
+  .menu-content.scroll-content {
+    top: $header-bar-height+20px !important;
+  }
+}
